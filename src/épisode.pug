@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.scss" />
+    <title>soranime</title>
+</head>
+  <body>
+  include includes/header.pug
+  include includes/retour.pug
+    <section class="presentation">
+
+      <img class="presentation__img" src="assets/img/Episode/Naruto_présentation.png" alt="Naruto_pres">
+      <article class="presentation__desc">
+        <h1 class="presentation__desc__title">Naruto</h1>
+        <p class="presentation__desc__rec">Recommandé à 94%</p>
+        <p class="presentation__desc__type">Action/ Ninja - 21 saisons - 500 épisodes</p>
+        <p class="presentation__desc__txt">Naruto est un garçon un peu spécial. Solitaire au caractère fougueux, il n'est pas des plus appréciés dans son village. Malgré cela, il garde au fond de lui une ambition: celle de devenir un "maître Hokage", la plus haute distinction dans l'ordre des ninjas, et ainsi obtenir la reconnaissance de ses pairs mais cela ne sera pas de tout repos ... Suivez l'éternel farceur dans sa quête du secret de sa naissance et de la conquête des fruits de son ambition !</p>
+
+        <div class="presentation__desc__cta">
+          <a href="player.pug">
+            <button class="presentation__desc__cta__button">Regarder</button></a>
+          <article class="presentation__desc__fav">
+            <img src="assets/icones/heart.svg" alt="#">
+            <p>Ajouter aux favoris</p>
+          </article>
+
+        </div> 
+      </article>
+    </section>
+    <section class="listeEp">
+      <select class="listeEp__select" name="saisons" id="saisons">
+        <option value="s1">Saison 1</option>
+        <option value="s2">Saison 2</option>
+        <option value="s3">Saison 3</option>
+        <option value="s4">Saison 4</option>
+        <option value="s5">Saison 5</option>
+        <option value="s6">Saison 6</option>
+        <option value="s7">Saison 7</option>
+      </select>
+      <article class="listeEp__list">
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep1.jpg"></a>
+          <p>episode 1</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep2.jpg"></a>
+          <p>episode 2</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep3.jpg"></a>
+          <p>episode 3</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep4.jpg"></a>
+          <p>episode 4</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep5.jpg"></a>
+          <p>episode 5</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep6.jpg"></a>
+          <p>episode 6</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep7.jpg"></a>
+          <p>episode 7</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep8.jpg"></a>
+          <p>episode 8</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep9.jpg"></a>
+          <p>episode 9</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep10.jpg"></a>
+          <p>episode 10</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep11.jpg"></a>
+          <p>episode 11</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep12.jpg"></a>
+          <p>episode 12</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep13.jpg"></a>
+          <p>episode 13</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep14.jpg"></a>
+          <p>episode 14</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep15.jpg"></a>
+          <p>episode 15</p>
+        </div>
+
+        <div class="listeEp__ep">
+          <a href=""><img src="assets/img/Episode/ep16.jpg"></a>
+          <p>episode 16</p>
+        </div>
+
+
+      </article>
+    </section>
+    include includes/footer.pug
+  </body>
+</html>

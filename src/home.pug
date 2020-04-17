@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.scss" />
+    <title>Soranime</title>
+  </head>
+  <body class="homeBody">
+  include includes/header.pug
+  main.main 
+    section.main__firstSection.firstSection
+        img.firstSection__picture(src="assets/img/naruto-hokage.jpg")
+        .firstSection__wrapper
+            img.firstSection__logo(src="assets/img/logo-naruto.png")
+            p Toutes les saisons disponibles dès maintenant
+            .firstSection__buttons
+                <button><a href="épisode.pug">Regarder</a></button>
+                button + Ma liste
+
+    section.main__new.new
+        .new__top.top
+            <h2 class="new__title"><a> Nouveautés</a></h2>
+            div.new__more
+              a.texte  Voir plus 
+              <svg class="rightArrow" width="12" height="12" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.0132 9.01558L0.000698399 2.00308L2.00386 -8.37355e-05L11.0195 9.01558L2.00386 18.0312L0.000698399 16.0281L7.0132 9.01558Z" fill="#535353"/>
+              </svg>
+
+        .new__list
+            img.fate(src="assets/img/Homepage/Nouveauté/Fate_Stay_Night.png")
+            img.loveIsWar(src="assets/img/Homepage/Nouveauté/Love_is_War.png")
+            img.demonSlayer(src="assets/img/Homepage/Nouveauté/Demon_slayer.png")
+            img.sao(src="assets/img/Homepage/Nouveauté/SAO.png")
+        include includes/synopsis.pug 
+        
+
+    section.main__cat.cat
+        .cat__top.top
+          <h2 class="cat__title"><a> Top 10</a></h2>
+          div.cat__more
+              a.texte  Voir plus 
+              <svg class="rightArrow" width="12" height="12" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.0132 9.01558L0.000698399 2.00308L2.00386 -8.37355e-05L11.0195 9.01558L2.00386 18.0312L0.000698399 16.0281L7.0132 9.01558Z" fill="#535353"/>
+              </svg>
+            
+        .cat__list
+
+
+            img.naruto(src="assets/img/Homepage/Top10/Naruto.png" id="film")
+            img.codeGeass(src="assets/img/Homepage/Top10/Code_geass.png")
+            img.samuraiChamploo(src="assets/img/Homepage/Top10/Samurai_Champloo.png")
+            img.chateauAmbulant(src="assets/img/Homepage/Top10/Le_chateau_ambulant.png")   
+
+            img(src="assets/img/Homepage/Top10/devilman.jpg")
+            img(src="assets/img/Homepage/Top10/one_punch_man.webp")
+            img(src="assets/img/Homepage/Top10/parasite.webp")
+            img(src="assets/img/Homepage/Top10/black_lagoon.webp") 
+            img(src="assets/img/Homepage/Shonen/Boku_no_Hero.png")
+            img(src="assets/img/Homepage/Seinen/Evangelion.png")
+            
+       
+
+
+    section.main__cat.cat
+        .cat__top.top
+            <h2 class="cat__title"><a class="cat__link" href="shonen.pug">Shonen</a></h2>
+            div.cat__more
+              <a href="shonen.pug">Voir plus</a>
+              <svg class="rightArrow" width="12" height="12" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.0132 9.01558L0.000698399 2.00308L2.00386 -8.37355e-05L11.0195 9.01558L2.00386 18.0312L0.000698399 16.0281L7.0132 9.01558Z" fill="#535353"/>
+              </svg>
+
+        .cat__list
+            img(src="assets/img/Homepage/Shonen/Jojo.png")
+            img(src="assets/img/Homepage/Shonen/Naruto.png")
+            img(src="assets/img/Homepage/Shonen/Inazuma_eleven.png")
+            img(src="assets/img/Homepage/Shonen/Yu_Gi_Oh.png")   
+            img(src="assets/img/Homepage/Shonen/Chateau_Ambulant.png")
+            img(src="assets/img/Homepage/Shonen/Full_metal.png")
+            img(src="assets/img/Homepage/Shonen/Hunter_X_hunter.png")
+
+    section.main__cat.cat
+        .cat__top.top
+            <h2 class="cat__title"><a class="cat__link" href="shonen.pug">Shojo</a></h2>
+            div.cat__more
+                a.texte  Voir plus 
+                <svg class="rightArrow" width="12" height="12" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.0132 9.01558L0.000698399 2.00308L2.00386 -8.37355e-05L11.0195 9.01558L2.00386 18.0312L0.000698399 16.0281L7.0132 9.01558Z" fill="#535353"/>
+                </svg>
+        .cat__list
+            img(src="assets/img/Homepage/Shojo/Black-Butler.png")
+            img(src="assets/img/Homepage/Shojo/Vampire_knight.png")
+            img(src="assets/img/Homepage/Shojo/Sawako.png")
+            img(src="assets/img/Homepage/Shojo/Karakai.png")   
+            img(src="assets/img/Homepage/Shojo/toradora.jpg")
+            img(src="assets/img/Homepage/Shojo/your_lie_in_april.jpg")
+    
+    section.main__cat.cat
+        .cat__top.top
+            <h2 class="cat__title"><a>Seinen</a></h2>
+            div.cat__more
+              <a>Voir plus</a>
+              <svg class="rightArrow" width="12" height="12" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.0132 9.01558L0.000698399 2.00308L2.00386 -8.37355e-05L11.0195 9.01558L2.00386 18.0312L0.000698399 16.0281L7.0132 9.01558Z" fill="#535353"/>
+              </svg>
+
+        .cat__list
+            img(src="assets/img/Homepage/Seinen/Hellsing.png")
+            img(src="assets/img/Homepage/Seinen/Evangelion.png")
+            img(src="assets/img/Homepage/Seinen/Steins_Gate.png")
+            img(src="assets/img/Homepage/Seinen/Death_Note.png") 
+            img(src="assets/img/Homepage/Seinen/gantz.jpg") 
+            img(src="assets/img/Homepage/Seinen/blame.jpg")
+
+    section.main__cat.cat
+        .cat__top.top
+            <h2 class="cat__title"><a href="films.pug">Film d'animation</a></h2>
+            div.cat__more
+              <a href="films.pug">Voir plus</a>
+              <svg class="rightArrow" width="12" height="12" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.0132 9.01558L0.000698399 2.00308L2.00386 -8.37355e-05L11.0195 9.01558L2.00386 18.0312L0.000698399 16.0281L7.0132 9.01558Z" fill="#535353"/>
+              </svg>
+
+        .cat__list
+            img(src="assets/img/Film/The_last_Film.png")
+            img(src="assets/img/Film/Fairy_tail_Film.png")
+            img(src="assets/img/Film/DBZ_Film.png")
+            img(src="assets/img/Film/Le_tombeau_des_lucioles.png")   
+            img(src="assets/img/Film/Le_garçon_et_la_bête.png")
+            img(src="assets/img/Film/Your_name.png")
+            img(src="assets/img/Film/Le_voyage_de_Chihiro.png")
+
+  include includes/footer.pug
+  script(src="/JavaScript/synopsis.js")
+  </body>
+</html>
+

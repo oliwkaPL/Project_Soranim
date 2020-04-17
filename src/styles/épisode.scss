@@ -1,0 +1,127 @@
+body {
+  font-family: Helvetica;
+}
+.presentation {
+  display: flex;
+
+  &__img {
+    flex-direction: column;
+    align-content: flex-start;
+    height: 60vh;
+    margin-top: 10vh;
+    margin-right: 5vw;
+  }
+
+  &__ep {
+    margin-top: 150px;
+    a {
+      text-decoration: none;
+      color: black;
+      margin-left: 200px;
+    }
+    p {
+      margin-left: 190px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.presentation__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 96px;
+    margin-top: 10vh;
+    margin-bottom: 50px;
+  }
+
+  &__rec {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1baa5d;
+    margin-bottom: 50px;
+  }
+
+  &__txt {
+    width: 600px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+  }
+
+  &__type {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  &__fav {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 50px;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__cta {
+    display: flex;
+
+    button {
+      margin-right: 2rem;
+    }
+
+    &__button {
+      border: none;
+      background-color: #1b9aaa;
+      border-radius: 2px;
+      width: 149px;
+      height: 34px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+
+.listeEp {
+  width: 90vw;
+  margin-left: auto;
+  &__select {
+    height: 2rem;
+    width: 6rem;
+    font-family: helvetica;
+    font-size: var(--main-font-size);
+    margin-bottom: 2rem;
+    border: solid 0.5px #dddddd;
+    border-radius: 4px;
+  }
+  &__saison {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      margin-right: 10px;
+      width: 250px;
+      height: 150px;
+      cursor: pointer;
+      transition: transform 0.2s ease-out;
+      border-radius: 5px;
+      &:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+      }
+    }
+    p {
+      text-align: center;
+      margin: 5px 0 25px 0;
+    }
+  }
+}

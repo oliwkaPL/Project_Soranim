@@ -1,0 +1,26 @@
+.films__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 100px;
+  text-align: center;
+}
+.films {
+  display: grid;
+  grid-template-columns: 1150px;
+  justify-content: center;
+  margin-top: 100px;
+}
+.film__posters {
+  align-items: center;
+}
+.films__posters__img {
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
